@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style_form.css">
+    <title>calculator</title>
+    <script>
+        //  function cals(result){
+        //   frm.txtResult.value=frm.txtResult.value + result;
+        //  }
+        function cals(val){
+         document.getElementById("result").value +=val;
+             }
+    </script>           
+</head>
+
+<body>
+    <div class="container">
+        <form action="frm">
+            <div class="row">
+                <h1>calculator</h1><br>
+                <input type="text" id="result" name="txtResult">
+            </div>
+            <div class="row">
+               <br> <input type="button" name="b1" value="1" onclick="cals(b1.value)">
+                <input type="button" name="b2" value="2" onclick="cals(b2.value)">
+                <input type="button" name="b3" value="3" onclick="cals(b3.value)">
+                <input type="button" name="b4" value="4" onclick="cals(b4.value)">
+
+            </div>
+            <div class="row">
+                <br><input type="button" name="b5" value="5" onclick="cals(b5.value)">
+                <input type="button" name="b6" value="6" onclick="cals(b6.value)">
+                <input type="button" name="b7" value="7" onclick="cals(b7.value)">
+                <input type="button" name="b8" value="8" onclick="cals(b8.value)">
+
+            </div>
+            <div class="row">
+                <br><input type="button" name="b9" value="9" onclick="cals(b9.value)">
+                <input type="button" name="b0" value="0" onclick="cals(b0.value)">
+                <input type="button" name="bC" value="C" onclick="cals(bc.value)">
+                <input type="button" name="sum" value="+" onclick="cals(sum.value)">
+
+
+            </div>
+            <div class="row">
+                <br> <input type="button" name="sub" value="-" onclick="cals(sub.value)">
+                <input type="button" name="mul" value="*" onclick="cals(mul.value)">
+                <input type="button" name="dev" value="/" onclick="cals(dev.value)">
+                <input type="button" name="Equal" value="=" onclick="frm.txtResult.value=eval(frm.txtResult.value)">
+
+            </div>
+          
+        </form>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<title>Fahrenheit to Celcius Temperature Converter</title>
+<body>
+<fieldset>
+<h2>Temperature Converter</h2>
+<p>
+  <label>Tem</label>
+  <input id="inputFahrenheit" type="number" placeholder="Tem" oninput="temperatureConverter(this.value)" onchange="temperatureConverter(this.value)">
+</p>
+<p>Convert : <span id="outputCelcius"></span></p>
+</fieldset>
+
+<script>
+function temperatureConverter(valNum) {
+  valNum = parseFloat(valNum);
+  document.getElementById("outputCelcius").innerHTML=(valNum-32)/1.8;
+}
+</script>
+
+</body>
+</html>
